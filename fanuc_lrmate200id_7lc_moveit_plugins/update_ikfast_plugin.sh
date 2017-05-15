@@ -1,0 +1,1 @@
+rosrun moveit_ikfast create_ikfast_moveit_plugin.py fanuc_lrmate200id_7lc manipulator fanuc_lrmate200id_7lc_moveit_plugins /home/rsinnet/proj/ros_ws/grillbot_ws/src/fanuc_experimental/fanuc_lrmate200id_7lc_moveit_plugins/src/fanuc_lrmate200id_7lc_manipulator_ikfast_solver.cpp

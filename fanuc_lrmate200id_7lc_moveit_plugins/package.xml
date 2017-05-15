@@ -1,53 +1,49 @@
-<?xml version="1.0"?>
-<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<package format="2">
+<?xml version='1.0' encoding='ASCII'?>
+<package>
   <name>fanuc_lrmate200id_7lc_moveit_plugins</name>
-  <version>0.1.0</version>
-  <description>
-    <p>
-      MoveIt plugins for the Fanuc LR Mate 200iD 7LC.
-    </p>
-    <p>
-      This package contains plugins for use with MoveIt and Fanuc LR Mate 200iD
-      manipulators. Plugins included support the base model. See the Fanuc
-      LR Mate 200iD support package for information on used joint angle and
-      velocity limits.
-    </p>
-    <p>
-      Before using any of the plugins included in this package, be sure to
-      check they are correct for the particular robot model and configuration
-      you intend to use them with.
-    </p>
-  </description>
-  <author>G.A. vd. Hoorn (TU Delft Robotics Institute)</author>
-  <maintainer email="g.a.vanderhoorn@tudelft.nl">G.A. vd. Hoorn (TU Delft Robotics Institute)</maintainer>
-  <license>BSD</license>
-
-  <url type="website">http://wiki.ros.org/fanuc_lrmate200id_7lc_moveit_plugins</url>
-  <url type="bugtracker">https://github.com/ros-industrial/fanuc_experimental/issues</url>
-  <url type="repository">https://github.com/ros-industrial/fanuc_experimental</url>
-
+  <version>0.0.0</version>
+  <description>The fanuc_lrmate200id_7lc_moveit_plugins package</description>
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="rsinnet@todo.todo">rsinnet</maintainer>
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+  <!-- Url tags are optional, but multiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/fanuc_lrmate200id_7lc_moveit_plugins</url> -->
+  <!-- Author tags are optional, multiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintainers, but could be -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+  <!-- The *_depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <!-- Examples: -->
+  <!-- Use build_depend for packages you need at compile time: -->
+  <!--   <build_depend>message_generation</build_depend> -->
+  <!-- Use buildtool_depend for build tool packages: -->
+  <!--   <buildtool_depend>catkin</buildtool_depend> -->
+  <!-- Use run_depend for packages you need at runtime: -->
+  <!--   <run_depend>message_runtime</run_depend> -->
+  <!-- Use test_depend for packages you need only for testing: -->
+  <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-
-  <depend>liblapack-dev</depend>
-  <depend>moveit_core</depend>
-  <depend>pluginlib</depend>
-  <depend>roscpp</depend>
-  <depend>tf_conversions</depend>
-
+  <!-- The export tag contains other, unspecified, tags -->
   <export>
-    <moveit_core plugin="${prefix}/lrmate200id_7lc_kinematics/fanuc_lrmate200id_7lc_manipulator_moveit_ikfast_plugin_description.xml"/>
-    <rosindex>
-      <tags>
-        <tag>moveit</tag>
-        <tag>ikfast</tag>
-        <tag>kinematics</tag>
-        <tag>fanuc</tag>
-        <tag>industrial</tag>
-        <tag>ros-industrial</tag>
-        <tag>lrmate200id_7lc</tag>
-        <tag>experimental</tag>
-      </tags>
-    </rosindex>
+    <!-- Other tools can request additional information be placed here -->
+    <moveit_core plugin="${prefix}/fanuc_lrmate200id_7lc_manipulator_moveit_ikfast_plugin_description.xml"/>
   </export>
+  <build_depend>moveit_core</build_depend>
+  <build_depend>liblapack-dev</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>tf_conversions</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <run_depend>moveit_core</run_depend>
+  <run_depend>liblapack-dev</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>tf_conversions</run_depend>
+  <run_depend>pluginlib</run_depend>
 </package>
